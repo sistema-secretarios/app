@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA DIGITAL SECRETARIOS - Dashboard</title>
+    <title>Panel Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -258,7 +258,7 @@
         <aside id="sidebar-nav" class="sidebar">
             <div class="sidebar-header">
                 <i class="fas fa-balance-scale"></i>
-                <h2>SISTEMA SECRETARIOS</h2>
+                <h2>SECRETARIOS</h2>
             </div>
             
             <nav class="main-nav-sidebar">
@@ -303,7 +303,7 @@
                 <div class="top-bar">
                     <div class="app-logo">
                         <i class="fas fa-balance-scale"></i>
-                        <h1>SISTEMA DIGITAL SECRETARIOS</h1>
+                        <h1>Defensoría Civil y Comercial 6</h1>
                     </div>
                     <div class="user-info">
                         <span id="user-greeting">Bienvenido/a</span>
@@ -363,14 +363,29 @@
                         <p>Gestión documental del sistema</p>
                     </div>
 
+                    <div class="module-card" onclick="window.location.href='directorio-organismos.html'">
+                        <div class="module-icon">
+                            <i class="fas fa-address-book"></i>
+                        </div>
+                        <h3>Datos Organismos</h3>
+                        <p>Directorio de Organismos</p>
+                    </div>
+                    
                     <div class="module-card" onclick="window.location.href='directorio-clientes.html'">
                         <div class="module-icon">
                             <i class="fas fa-address-book"></i>
                         </div>
-                        <h3>Directorio</h3>
-                        <p>Clientes y organismos relacionados</p>
+                        <h3>Datos Clientes</h3>
+                        <p>Directorio de Clientes relacionados</p>
                     </div>
-                </div>
+
+                    <div class="module-card" onclick="window.location.href='reporte-tareas.html'">
+                        <div class="module-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Reportes</h3>
+                        <p>Estadística de todas las actividades</p>
+                    </div>
             </div>
         </div>
     </div>

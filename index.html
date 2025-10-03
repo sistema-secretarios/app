@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA DIGITAL SECRETARIOS - Login</title>
+    <title>Sistema Digital Secretarios-Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -60,15 +60,31 @@
             align-items: center;
             transition: var(--transition);
         }
-
+        
+        /* Contenedor del logo con fondo blanco */
         .logo-card {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            color: var(--color-text-light);
+            background-color: #ffffff; /* Fondo blanco */
+            color: var(--color-text-dark); /* Color de texto ajustado si hubiere, aunque fue eliminado */
+            padding: 80px 30px; 
         }
 
         .logo-container {
             font-size: 5rem;
-            margin-bottom: 20px;
+            margin-bottom: 0;
+            padding: 0;
+            line-height: 0;
+        }
+        
+        /* Ajustes de la imagen */
+        .logo-container img {
+             width: 100%; 
+             height: auto;
+             max-width: 300px; 
+             border-radius: 50%;
+             border: 5px solid var(--color-primary); /* Borde ajustado a color primario para contraste */
+             object-fit: cover;
+             display: block;
+             margin: 0 auto;
         }
 
         .title-card h1 {
@@ -203,15 +219,13 @@
     <div class="landing-container">
         <div class="landing-card logo-card">
             <div class="logo-container">
-                <i class="fas fa-balance-scale"></i>
+                <img src="https://github.com/sistema-secretarios/app/blob/02fa73343e4a03c412e7267cc045286427d48804/1a.png?raw=true" alt="Logo del Sistema Digital">
             </div>
-            <h2>Sistema Judicial</h2>
-            <p>Defensoría Civil y Comercial 6</p>
         </div>
         
         <div class="landing-card title-card">
-            <h1>SISTEMA DIGITAL SECRETARIOS</h1>
-            <p>Sistema de gestión y seguimiento de expedientes judiciales. Actividades de Secretarios y Defensor.</p>
+            <h2>Sistema Digital Secretarios</h2>
+            <p>ACCESO EXCLUSIVO</p>
             <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 15px; width: 100%;">
                 <button class="btn btn-outline" onclick="showDemoInfo()">
                     <i class="fas fa-info-circle"></i> Instrucciones
@@ -271,7 +285,7 @@
             <div id="auth-message" class="message" style="display: none;"></div>
             
             <div style="margin-top: 20px; font-size: 0.9rem; color: var(--color-text-muted);">
-                <p>Los datos se guardan en el navegador (LocalStorage).</p>
+                <p>Diseño y Programación: Rómulo Fioravante</p>
             </div>
         </div>
     </div>
